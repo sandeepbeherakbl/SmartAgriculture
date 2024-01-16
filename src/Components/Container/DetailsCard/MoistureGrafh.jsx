@@ -11,10 +11,9 @@ export const MoistureChart = () => {
             area: true,
           },
         ]}
-        width={360}
+        width={320}
         height={200}
       />
-      
     </div>
   );
 };
