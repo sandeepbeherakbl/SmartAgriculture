@@ -6,6 +6,7 @@ import "./DetailCard.css";
 import MoistureLevel from "./MoistureLevel";
 import { dataRef } from "../Firebase";
 import { useEffect, useState } from "react";
+import { MoistureChart } from "./MoistureGrafh";
 
 export const DetailsCard = () => {
   const [valueIs] = useState("agriculture");
@@ -120,6 +121,9 @@ export const DetailsCard = () => {
                 className={`indicator ${medicine2Btn ? "green" : "grey"}`}
               ></div>
             </button>
+          </div>
+          <div className="moisture-card-container">
+            <MoistureChart />
           </div>
         </div>
       </div>
