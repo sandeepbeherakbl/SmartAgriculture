@@ -19,7 +19,7 @@ body {
 .top-bar {
   background-color: #419b45; /* Dark green navbar */
   color: white;
-  padding: 5px 20px;
+  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +28,11 @@ body {
 .title-container {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.title-container h1{
+  font-weight: 100;
 }
 
 .title-icon {

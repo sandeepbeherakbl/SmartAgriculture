@@ -46,7 +46,7 @@ export const WeatherCard = () => {
           <div className="Circle3" style={{ backgroundColor: circle3BackgroundColor }}></div>
           <div className="content">
             <h1 className="Condition">
-              <i className="material-icons sun"></i> Sunny
+              <i className="material-icons sun"></i> Temp
             </h1>
             <h1 className="Temp">
               {data?.air_temperature}

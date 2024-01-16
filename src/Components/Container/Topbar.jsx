@@ -1,12 +1,12 @@
-import Agriculture from "../../assets/agriculture.png";
 import Notification from "../../assets/notification.png";
+import Field from "../../assets/field.png"
 
 export const Topbar = () => {
   return (
     <>
       <div className="top-bar">
         <div className="title-container">
-          <img className="title-icon" src={Agriculture} alt="Agriculture" />
+          <img className="title-icon" src={Field} alt="Field" />
           <h1>Smart Agriculture</h1>
         </div>
         <div className="notification-icon">
