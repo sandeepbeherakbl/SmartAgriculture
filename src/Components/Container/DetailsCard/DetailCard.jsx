@@ -34,28 +34,24 @@ export const DetailsCard = () => {
 
     fetchData();
 
-    // Cleanup the Firebase listener when the component unmounts
     return () => {
       dataRef.ref().child(valueIs).off("value", fetchData);
     };
   }, [dataRef, valueIs]);
 
   const handleWaterPumpClick = () => {
-    // Update Firebase data and local state
-    dataRef.ref().child(valueIs).update({ water_pump: !waterPumpBtn });
     setWaterPumpBtn((prevValue) => !prevValue);
+    dataRef.ref().child(valueIs).update({ water_pump: !waterPumpBtn });
   };
 
   const handleMedicine1Click = () => {
-    // Update Firebase data and local state
-    dataRef.ref().child(valueIs).update({ medicine1_pump: !medicine1Btn });
     setMedicine1Btn((prevValue) => !prevValue);
+    dataRef.ref().child(valueIs).update({ medicine1_pump: !medicine1Btn });
   };
 
   const handleMedicine2Click = () => {
-    // Update Firebase data and local state
-    dataRef.ref().child(valueIs).update({ medicine2_pump: !medicine2Btn });
     setMedicine2Btn((prevValue) => !prevValue);
+    dataRef.ref().child(valueIs).update({ medicine2_pump: !medicine2Btn });
   };
 
   return (

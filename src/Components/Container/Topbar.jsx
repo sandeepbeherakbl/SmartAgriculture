@@ -7,7 +7,7 @@ export const Topbar = () => {
       <div className="top-bar">
         <div className="title-container">
           <img className="title-icon" src={Field} alt="Field" />
-          <h1>Smart Agriculture</h1>
+          <h1>CropConnect</h1>
         </div>
         <div className="notification-icon">
           <img className="notification-img-icon" src={Notification} alt="Notification" />
