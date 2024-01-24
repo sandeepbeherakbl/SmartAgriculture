@@ -103,7 +103,7 @@ export const DetailsCard = () => {
               className={`details-med1-button ${medicine1Btn ? "active" : ""}`}
               onClick={handleMedicine1Click}
             >
-              Med 1
+              Medicine
               <div
                 className={`indicator ${medicine1Btn ? "green" : "grey"}`}
               ></div>
@@ -112,7 +112,7 @@ export const DetailsCard = () => {
               className={`details-med2-button ${medicine2Btn ? "active" : ""}`}
               onClick={handleMedicine2Click}
             >
-              Med 2
+              Fertilizer
               <div
                 className={`indicator ${medicine2Btn ? "green" : "grey"}`}
               ></div>
